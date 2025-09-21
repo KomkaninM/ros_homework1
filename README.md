@@ -89,20 +89,24 @@ colcon build
 . install/setup.bash
 ```
 
-4. Run each question:
+4. Open TurtleSim Node:
+```bash
+ros2 run turtlesim turtlesim_node
+```
+   
+5. Run each question:
 
-Circle  
+ Circle  
 ```bash
 ros2 service call /reset std_srvs/srv/Empty
 ros2 run first_part circle
 ```
-Triangle
+ Triangle
 ```bash
 ros2 service call /reset std_srvs/srv/Empty
 ros2 run first_part triangle
 ```
-
-My Name
+ My Name
 ```bash
 bash src/second_part/pyRun_homework2.bash
 ```
